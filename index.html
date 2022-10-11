@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=nasa.gov"  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=nasa.gov"
+    />
     <title>Nasa API Pictures</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Loader -->
-    <div class="loader">
-        <img src="astro.svg" alt="Astronaut Loading Animation">
+    <div class="loader hidden">
+      <img src="astro.svg" alt="Astronaut Loading Animation" />
+    </div>
+    <!-- Container -->
+    <div class="container">
+      <!-- Navigation -->
+      <div class="navigation-container">
+        <span class="background"></span>
+        <!-- Results Nav -->
+        <span class="navigation-items" id="resultsNav">
+            <h3 class="clickable"></h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+            <h3 class="clickable">Load More</h3>
+        </span>
+        <!-- Favorites Nav -->
+        <span class="navigation-items hidden"> id="favoritesNav">
+            <h3 class="clickable">Load More NASA Images</h3>
+        </span>
+      </div>
     </div>
     <!-- SCRIPT -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
