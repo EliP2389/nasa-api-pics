@@ -21,6 +21,17 @@ body {
     align-items: center;
 }
 
+/* Navigation */
+.navigation-container {
+    position: fixed;
+    top: 0;
+}
+
+.navigation-items {
+    display: flex;
+    justify-content: center;
+}
+
 /* Hidden */
 .hidden {
     display: none;
