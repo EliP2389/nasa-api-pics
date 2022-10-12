@@ -44,6 +44,16 @@ body {
     justify-content: center;
 }
 
+.clickable {
+    cursor: pointer;
+    color: rgb(85, 85, 85);
+    user-select: none;
+}
+
+.clickable:hover {
+    color: dodgerblue;
+}
+
 .background {
     background: whitesmoke;
     position: fixed;
