@@ -63,6 +63,27 @@ body {
     z-index: -1;
 }
 
+/* Images Container */
+.card {
+    background: white;
+    margin: 10px 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+/* Save Confirmation */
+.save-confirmed {
+    background: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    position: fixed;
+    bottom: 25px;
+    right: 50px;
+}
+
 /* Hidden */
 .hidden {
     display: none;
