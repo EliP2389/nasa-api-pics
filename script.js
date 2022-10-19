@@ -80,9 +80,14 @@ async function getNasaImages() {
 saveFavorite = (itemUrl) => {
   // Loop through Results array to select favorites
   resultsArray.forEach((item) => {
-    if (item.url.includes(itemUrl)) {
+    if (item.url.includes(itemUrl) && !favorites[itemUrl]) {
       favorites[itemUrl] = item;
       console.log(favorites);
+    // Show save Confirmation for 2 seconds
+    saveConfirmed.hidden = false;
+    setTimeout(() => {
+        saveConfirmed.hidden = true;
+    }, 2000);
     }
   });
 };
